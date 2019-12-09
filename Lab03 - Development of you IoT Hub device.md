@@ -8,20 +8,24 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
 
 ## Task 0: Prepare your device app code and environment
 
-1. In you command promot, navigate to the root folder of the PerfSensorDevice C# project
+1. Download the source code
+   Download the source code from this link: https://github.com/hguomin/danfossiotbootcamp/blob/master/PerfSensorDevice.zip and unzip it to your local folder.
+
+2. Navigate to the root folder of the source code - PerfSensorDevice C# project
    ```bash
-    $ dotnet new console -o PerfSensorDevice
     $ cd PerfSensorDevice
    ```
 
-2. Open source folder in Visual Studio Code, Replace the value of the iothubDeviceConnectionString variable in Program.cs with the device connection string you made a note of earlier. Then save your changes to Program.cs.
-   
-3. In VS Code, press Ctrl+Shift+` to open the TERMINAL window, then run below command to restore the package for this application
+3. Open PerfSensorDevice folder in Visual Studio Code, Replace the value of the iothubDeviceConnectionString variable in Program.cs with the device connection string you made a note of earlier. Then save your changes to Program.cs.
+   ```cs
+   private static string iothubDeviceConnectionString = "Input your device connection string here.";
+   ```
+4. In VS Code, press Ctrl+Shift+` to open the TERMINAL window, then run below command to restore the package for this application
    ```
    $ dotnet restore
    ```
-4. Connect to your Azure IoT Hub in VS Code 
-   In VS Code, press F1 to open the Command Palette, type "Azure Sign In With Device Code" and select the command to sign in Azure
+5. Connect to your Azure IoT Hub in VS Code 
+   In VS Code, press F1 to open the Command Palette, type "Azure: Sign In ", select the command and follow the steps to sign in Azure
 
    ![ ](images/azure-signin-1.PNG)
 

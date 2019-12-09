@@ -1,5 +1,8 @@
 # Purpose
-Develop an simulated Azure iot hub device
+Develop an simulated Azure iot hub device and learn major capabilities of Azure IoT Hub including:
+1. Send device to cloud message from device to cloud
+2. Invoke device direct method from cloud 
+3. Send cloud to device message from cloud to device
 
 # Steps
 
@@ -129,7 +132,7 @@ Develop an simulated Azure iot hub device
    ```cs
    deviceClient.SetMethodHandlerAsync(nameof(SetTelemetryInterval), SetTelemetryInterval, null).Wait();
    ```
-3. In command promot issue below command to run the app
+3. In VS Code TERMINAL issue below command to run the app
    ```bash
    dotnet run
    ```
@@ -180,7 +183,7 @@ Develop an simulated Azure iot hub device
    ```cs
    deviceClient.SetMethodHandlerAsync(nameof(SetNetworkLatencyTestTargetHost), SetNetworkLatencyTestTargetHost, null).Wait();
    ```
-3. In command promot issue below command to run the app
+3. In VS Code TERMINAL issue below command to run the app
    ```bash
    dotnet run
    ```
@@ -196,7 +199,7 @@ Develop an simulated Azure iot hub device
 
    Then you can see the network latency test target host are changed in the device app:
    ![](images/Invoke-cmd-24.png)
-   
+
 ## Task 5: Receive cloud to device message
 1. Add below function code to the below of the comment line "//TASK-5: Receive cloud to device message: ReceiveDeviceMessage"
    ```cs
@@ -240,7 +243,17 @@ Develop an simulated Azure iot hub device
    ```cs
    tasks.Add(ReceiveDeviceMessage());
    ```
-3. In command promot issue below command to run the app
+3. In VS Code TERMINAL issue below command to run the app
    ```bash
    dotnet run
    ```
+4. Send remote message from cloud to device
+   In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", as below shown:
+   ![](images/c2dmsg-1.png)
+
+   Then input any message you want to send to the device from Azure IoT Hub, like "hello device!" and press Enter
+   ![](images/c2dmsg-2.png)
+
+   Your device app will receive the message you just sent from the cloud:
+   ![](images/c2dmsg-4.png)
+

@@ -8,8 +8,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
 
 ## Task 0: Prepare your device app code and environment
 
-1. Download the source code
-   Download the source code from this link: https://github.com/hguomin/danfossiotbootcamp/blob/master/PerfSensorDevice.zip and unzip it to your local folder.
+1. Download the source code from this link: https://github.com/hguomin/danfossiotbootcamp/blob/master/PerfSensorDevice.zip and unzip it to your local folder.
 
 2. Navigate to the root folder of the source code - PerfSensorDevice C# project
    ```bash

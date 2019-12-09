@@ -88,6 +88,12 @@ Develop an simulated Azure iot hub device
    ```bash
    dotnet run
    ```
+4. View the telemetry sent to Azure IoT Hub
+   In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Start Monitoring Built-in Event Endpoint", as below shown
+   ![](images/view-dev-telemetry.png)
+
+   then you will see all telemetry message the device sent to Azure IoT Hub in the output window in VS Code
+   ![](images/show-dev-telemetry.PNG)
 
 ## Task 3: Handle device command for setting telemetry interval 
 1. Add below function code to the below of the comment line "//TASK-3: Handle device command: SetTelemetryInterval"
@@ -127,7 +133,22 @@ Develop an simulated Azure iot hub device
    ```bash
    dotnet run
    ```
+4. Invoke the device command remotely in VS Code
+   In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", as below shown:
+   ![](images/invoke-cmd.png)
 
+   Input the command name "SetTelemetryInterval" and press Enter:
+   ![](images/invoke-cmd-1.png)
+
+   Input a number like 2000 and then press Enter to start invoke the device command remotely
+   ![](images/Invoke-cmd-2.png)
+
+   Once the command executed by the device, it will return the response result and you will see it in VS Code OUTPUT window:
+   ![](images/Invoke-cmd-4.png)
+
+   Then you can see the interval of telemetry sent are changed in the device app:
+   ![](images/Invoke-cmd-5.png)
+   
 ## Task 4: Handle device command for changging network latency test target
 1. Add below function code to the below of the comment line "//TASK-4: Handle device command: SetNetworkLatencyTestTargetHost"
    ```cs
@@ -163,7 +184,19 @@ Develop an simulated Azure iot hub device
    ```bash
    dotnet run
    ```
+4. Invoke the device command remotely in VS Code
+   In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", input the command name "SetNetworkLatencyTestTargetHost" and press Enter:
+   ![](images/invoke-cmd-21.PNG)
 
+   Input new host url like "www.microsoft.com" and then press Enter to start invoke the device command remotely
+   ![](images/invoke-cmd-22.png)
+
+   Once the command executed by the device, it will return the response result and you will see it in VS Code OUTPUT window:
+   ![](images/invoke-cmd-23.png)
+
+   Then you can see the network latency test target host are changed in the device app:
+   ![](images/Invoke-cmd-24.png)
+   
 ## Task 5: Receive cloud to device message
 1. Add below function code to the below of the comment line "//TASK-5: Receive cloud to device message: ReceiveDeviceMessage"
    ```cs

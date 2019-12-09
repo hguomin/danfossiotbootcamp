@@ -93,6 +93,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    dotnet run
    ```
 4. View the telemetry sent to Azure IoT Hub
+   
    In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Start Monitoring Built-in Event Endpoint", as below shown
    ![](images/view-dev-telemetry.png)
 
@@ -137,6 +138,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    dotnet run
    ```
 4. Invoke the device command remotely in VS Code
+   
    In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", as below shown:
    ![](images/invoke-cmd.png)
 
@@ -188,6 +190,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    dotnet run
    ```
 4. Invoke the device command remotely in VS Code
+   
    In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", input the command name "SetNetworkLatencyTestTargetHost" and press Enter:
    ![](images/invoke-cmd-21.PNG)
 
@@ -248,6 +251,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    dotnet run
    ```
 4. Send remote message from cloud to device
+   
    In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", as below shown:
    ![](images/c2dmsg-1.png)
 

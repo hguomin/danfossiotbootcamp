@@ -253,11 +253,11 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
 4. Send remote message from cloud to device
    
    In the "AZURE IOT HUB" Panel in VS Code, select your device and right click, select "Invoke Device Direct Method", as below shown:
-   ![](images/c2dmsg-1.png)
+   ![](images/c2dmsg-1.PNG)
 
    Then input any message you want to send to the device from Azure IoT Hub, like "hello device!" and press Enter
-   ![](images/c2dmsg-2.png)
+   ![](images/c2dmsg-2.PNG)
 
    Your device app will receive the message you just sent from the cloud:
-   ![](images/c2dmsg-4.png)
+   ![](images/c2dmsg-4.PNG)
 

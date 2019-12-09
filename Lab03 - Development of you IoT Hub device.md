@@ -43,7 +43,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    ![](./images/choose-device.png)
 
 ## Task 1: Initialize device client
-1. Add below code to the below of the line "//TASK-1: create device client from connection string" in MainAsync() method
+1. Add below code to the below of the comment line "//TASK-1: create device client from connection string" in MainAsync() method
     ```cs
     deviceClient = DeviceClient.CreateFromConnectionString(iothubDeviceConnectionString);
 
@@ -83,12 +83,12 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
             await Task.Delay(telemetryInterval);
         }
     }
-   ``
-2. Add below code to the below of the comment line "//TASK-2: Send device telemetry "
+   ```
+2. Add below code to the below of the comment line "//TASK-2: Send device telemetry " in the MainAsync() function
    ```cs
    tasks.Add(SendDeviceTelemetryAsync());
    ```
-3. In command promot issue below command to run the app
+3. In VS Code TERMINAL issue below command to run the app
    ```bash
    dotnet run
    ```
@@ -127,8 +127,7 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
            return Task.FromResult(new MethodResponse(Encoding.UTF8.GetBytes(result), 400));
        }
    }
-
-   ``
+   ```
 2. Add below code to the below of the comment line "//TASK-3: register device method for command" in the MainAsync() function to register this device method
    ```cs
    deviceClient.SetMethodHandlerAsync(nameof(SetTelemetryInterval), SetTelemetryInterval, null).Wait();

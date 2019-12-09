@@ -195,13 +195,13 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    ![](images/invoke-cmd-21.PNG)
 
    Input new host url like "www.microsoft.com" and then press Enter to start invoke the device command remotely
-   ![](images/invoke-cmd-22.png)
+   ![](images/invoke-cmd-22.PNG)
 
    Once the command executed by the device, it will return the response result and you will see it in VS Code OUTPUT window:
-   ![](images/invoke-cmd-23.png)
+   ![](images/invoke-cmd-23.PNG)
 
    Then you can see the network latency test target host are changed in the device app:
-   ![](images/Invoke-cmd-24.png)
+   ![](images/invoke-cmd-24.PNG)
 
 ## Task 5: Receive cloud to device message
 1. Add below function code to the below of the comment line "//TASK-5: Receive cloud to device message: ReceiveDeviceMessage"

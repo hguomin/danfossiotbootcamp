@@ -24,24 +24,22 @@ Develop an simulated Azure iot hub device and learn major capabilities of Azure 
    $ dotnet restore
    ```
 5. Connect to your Azure IoT Hub in VS Code 
+   
    In VS Code, press F1 to open the Command Palette, type "Azure: Sign In ", select the command and follow the steps to sign in Azure
 
    ![ ](images/azure-signin-1.PNG)
 
-   Once you signed in Azure, follow below steps to select you IoT Hub in VS Code
+   Once you signed in Azure, in AZURE IOT HUB panel of VS code, click the more action button "..." and select "Select IoT Hub" menu item to select you IoT Hub in VS Code
 
    ![ ](./images/select-iot-hub-1.PNG)
 
-   Choose your subscription
-
+   Choose your subscription:
    ![](./images/choose-sub.png)
 
-   Choose your IoT Hub
-
+   Choose your IoT Hub:
    ![](./images/choose-iot-hub.png)
 
    Now you will connect to your iot hub in VS Code, you can find you device in the device list under the IoT Hub Panel, shown as below:
-
    ![](./images/choose-device.png)
 
 ## Task 1: Initialize device client
